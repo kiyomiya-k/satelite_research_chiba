@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+<div class="vega-visualization" id="vega-visualization-e3d2e9e9a5374aec8bd1c8919c404e51"></div>
+<script type="text/javascript">
+  const spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 12, "titleFontSize": 14}, "legend": {"labelFontSize": 12, "titleFontSize": 14}}, "data": {"name": "data-bc2db312e30d28e93032a5ee45bb0979"}, "mark": {"type": "line", "point": true, "strokeWidth": 2}, "encoding": {"color": {"field": "Type", "legend": {"orient": "top-left", "title": "\u7a2e\u985e"}, "scale": {"domain": ["\u5e73\u5747", "\u4e2d\u5fc3\u70b9", "1/4\u6b63\u65b9\u5f62"], "range": ["blue", "red", "green"]}, "type": "nominal"}, "tooltip": [{"field": "Date_str", "title": "\u65e5\u4ed8", "type": "nominal"}, {"field": "NDVI_value", "format": ".4f", "title": "NDVI", "type": "quantitative"}, {"field": "Type", "title": "\u7a2e\u985e", "type": "nominal"}], "x": {"axis": {"grid": true, "labelAngle": -45}, "field": "Date_str", "title": "\u89b3\u6e2c\u65e5\u4ed8", "type": "nominal"}, "y": {"axis": {"grid": true}, "field": "NDVI_value", "scale": {"domain": [0.0, 1.0]}, "title": "NDVI", "type": "quantitative"}}, "height": 500, "params": [{"name": "param_1e9efca18e7a2868", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": {"text": "NDVI\u6642\u7cfb\u5217\u5909\u5316\uff082025\u5e74\uff09\uff084/21\u9664\u304f\uff09", "fontSize": 16, "fontWeight": "bold"}, "width": 900, "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json", "datasets": {"data-bc2db312e30d28e93032a5ee45bb0979": [{"Date_str": "2025-08-24", "NDVI_value": 0.8465685408945696, "Type": "\u5e73\u5747"}, {"Date_str": "2025-09-08", "NDVI_value": 0.8493721880770637, "Type": "\u5e73\u5747"}, {"Date_str": "2025-10-28", "NDVI_value": 0.7257177541196235, "Type": "\u5e73\u5747"}, {"Date_str": "2025-11-07", "NDVI_value": 0.788797910235356, "Type": "\u5e73\u5747"}, {"Date_str": "2025-08-24", "NDVI_value": 0.901745838408445, "Type": "\u4e2d\u5fc3\u70b9"}, {"Date_str": "2025-09-08", "NDVI_value": 0.5104895250634857, "Type": "\u4e2d\u5fc3\u70b9"}, {"Date_str": "2025-10-28", "NDVI_value": 0.32745315224999866, "Type": "\u4e2d\u5fc3\u70b9"}, {"Date_str": "2025-11-07", "NDVI_value": 0.21478873239436616, "Type": "\u4e2d\u5fc3\u70b9"}, {"Date_str": "2025-08-24", "NDVI_value": 0.8575775852137097, "Type": "1/4\u6b63\u65b9\u5f62"}, {"Date_str": "2025-09-08", "NDVI_value": 0.8274859122950732, "Type": "1/4\u6b63\u65b9\u5f62"}, {"Date_str": "2025-10-28", "NDVI_value": 0.5788772733827274, "Type": "1/4\u6b63\u65b9\u5f62"}, {"Date_str": "2025-11-07", "NDVI_value": 0.6619269665707684, "Type": "1/4\u6b63\u65b9\u5f62"}]}};
+  const embedOpt = {};
+  vegaEmbed('#vega-visualization-e3d2e9e9a5374aec8bd1c8919c404e51', spec, embedOpt).catch(console.error);
+</script>
+</body>
+</html>

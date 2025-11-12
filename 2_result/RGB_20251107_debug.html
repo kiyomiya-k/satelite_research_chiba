@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_14f8df47f1f7d21faf843f319119c032 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_14f8df47f1f7d21faf843f319119c032" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_14f8df47f1f7d21faf843f319119c032 = L.map(
+                "map_14f8df47f1f7d21faf843f319119c032",
+                {
+                    center: [35.152617, 140.0589465],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4019e7be5d67dc8208569be21fc1fa91 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4019e7be5d67dc8208569be21fc1fa91.addTo(map_14f8df47f1f7d21faf843f319119c032);
+        
+    
+            var tile_layer_0886554ae5e2f9b26cc12c8df73cbc1e = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/622349377948/maps/cfe7c5d491dbe2d115fcd31a59bb4454-468fa2c51880b4250d5feeef5cbaea6f/tiles/{z}/{x}/{y}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0886554ae5e2f9b26cc12c8df73cbc1e.addTo(map_14f8df47f1f7d21faf843f319119c032);
+        
+    
+            var polygon_46de6d6ba81b20c10ea61266bd4493c2 = L.polygon(
+                [[35.14381, 140.048947], [35.161424, 140.048947], [35.161424, 140.068946], [35.14381, 140.068946]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_14f8df47f1f7d21faf843f319119c032);
+        
+    
+            var marker_af3911afae1ad6de2a8f49a69838f0c1 = L.marker(
+                [35.152617, 140.0589465],
+                {
+}
+            ).addTo(map_14f8df47f1f7d21faf843f319119c032);
+        
+    
+            var icon_197cd1ffaa6f05054c9213d397af1156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_af3911afae1ad6de2a8f49a69838f0c1.setIcon(icon_197cd1ffaa6f05054c9213d397af1156);
+            
+    
+            var polygon_eef09cf92964ce38aeb0ab58fe07acdc = L.polygon(
+                [[35.1482135, 140.054543], [35.1570205, 140.054543], [35.1570205, 140.06334999999999], [35.1482135, 140.06334999999999]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_14f8df47f1f7d21faf843f319119c032);
+        
+    
+        var popup_f2f172e6f81da670de0dcef7e4cdc515 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c943d92cbd97e95d7b2404fd7b4027e9 = $(`<div id="html_c943d92cbd97e95d7b2404fd7b4027e9" style="width: 100.0%; height: 100.0%;">1/4サイズの正方形</div>`)[0];
+                popup_f2f172e6f81da670de0dcef7e4cdc515.setContent(html_c943d92cbd97e95d7b2404fd7b4027e9);
+            
+        
+
+        polygon_eef09cf92964ce38aeb0ab58fe07acdc.bindPopup(popup_f2f172e6f81da670de0dcef7e4cdc515)
+        ;
+
+        
+    
+    
+            polygon_eef09cf92964ce38aeb0ab58fe07acdc.bindTooltip(
+                `<div>
+                     1/4正方形範囲
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_14f8df47f1f7d21faf843f319119c032.fitBounds(
+                [[35.14381, 140.048947], [35.161424, 140.068946]],
+                {"padding": [5, 5]}
+            );
+        
+</script>
+</html>
